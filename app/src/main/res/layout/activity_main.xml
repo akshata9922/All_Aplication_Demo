@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgcall"
+        android:src="@drawable/call"
+        android:onClick="makeCall"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:layout_toRightOf="@+id/imgcall"
+        android:id="@+id/imgsms"
+        android:onClick="sendSms"
+        android:src="@drawable/sms"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/imgoogle"
+        android:layout_below="@+id/imgcall"
+        android:src="@drawable/google1"
+        android:onClick="openBrouser"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+
+    <ImageView
+        android:layout_below="@+id/imgsms"
+        android:layout_toRightOf="@+id/imgoogle"
+        android:id="@+id/imgmail"
+        android:src="@drawable/gmail"
+        android:onClick="sendMail"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/imgwhatsapp"
+        android:layout_below="@+id/imgoogle"
+        android:src="@drawable/whatsapp"
+        android:onClick="openwhatsapp"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+
+    <ImageView
+        android:layout_toRightOf="@id/imgwhatsapp"
+        android:layout_below="@+id/imgmail"
+        android:src="@drawable/facebook"
+        android:onClick="openfacebook"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+
+
+</RelativeLayout>
